@@ -1,18 +1,24 @@
 ---
 home: true
+layout: BlogHome
 icon: home
-title: 项目主页
+title: Summer
 heroImage: /logo.svg
-heroText: hope-theme-template
-tagline: HopeTheme模板
-actions:
-  - text: 使用指南 💡
-    link: /demo/
-    type: primary
+bgImage: /bg.jpg
+bgImageStyle:
+  background-image: var(--bg-image-style)
+heroText: Summer的笔记合集
+heroFullScreen: true
+tagline: 挖土机的点点滴滴(Push~Push~)
+projects:
+  - name: 前端笔记
+    desc: 前端笔记合集
+    link: https://blog.alexsun.top/vuepress-frontend-notes/
 
-  - text: 文档
-    link: /guide/
-
-copyright: false
-footer: 使用 <a href="https://theme-hope.vuejs.press/" target="_blank">VuePress Theme Hope</a> 主题 | MIT 协议, 版权所有 © 2019-present Mr.Hope
+  - name: 3w知识平台
+    desc: 3w社的知识网络
+    link: https://summer.alexsun.top/3w-frontend-platform/
+footer: summer的笔记合计
 ---
+
+<!-- ICON 参考：https://theme-hope.vuejs.press/zh/guide/interface/icon.html -->

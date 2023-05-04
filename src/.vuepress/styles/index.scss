@@ -1,1 +1,10 @@
 // place your custom styles here
+// 主页背景
+:root {
+  --bg-image-style: url(/bg.jpg);
+}
+
+.hero-image{
+    width: 10rem
+}
+@import "print.scss";

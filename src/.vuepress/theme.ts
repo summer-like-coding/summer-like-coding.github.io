@@ -3,46 +3,46 @@ import { Navbar } from "./navbar/index.js";
 import { Sidebar } from "./sidebar/index.js";
 
 export default hopeTheme({
-  hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
+  hostname: "https://summer.alexsun.top/",
 
   author: {
-    name: "Mr.Hope",
-    url: "https://mrhope.site",
+    name: "summer",
   },
-
+  // 图标库
   iconAssets: "iconfont",
+  // 全屏
+  // fullscreen:true,
 
   logo: "/logo.svg",
-
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
+  // GitHub链接
+  repo: "summer-like-coding/summer-like-coding.github.io.git",
 
   docsDir: "demo/theme-docs/src",
+  // navbar
+  navbar: Navbar,
 
-  locales: {
-    "/": {
-      // navbar
-      navbar: Navbar,
+  // sidebar
+  sidebar: Sidebar,
 
-      // sidebar
-      sidebar: Sidebar,
-
-      footer: "Default footer",
-
-      displayFooter: true,
-
-      metaLocales: {
-        editLink: "Edit this page on GitHub",
-      },
-    },
+  // meta配置
+  metaLocales: {
+    editLink: "Edit this page on GitHub",
   },
+  // footer配置
+  footer: "Default footer",
 
+  displayFooter: true,
   encrypt: {
     config: {
       "/demo/encrypt.html": ["1234"],
       "/zh/demo/encrypt.html": ["1234"],
     },
   },
-
+  // 幻灯片
+  blogLocales: {
+    slide: "幻灯片",
+    original: "原创",
+  },
   plugins: {
     // all features are enabled for demo, only preserve features you need here
     mdEnhance: {
@@ -65,7 +65,7 @@ export default hopeTheme({
         presets: ["ts", "vue"],
       },
       presentation: {
-        plugins: ["highlight", "math", "search", "notes", "zoom"]
+        plugins: ["highlight", "math", "search", "notes", "zoom"],
       },
       stylize: [
         {
@@ -84,7 +84,30 @@ export default hopeTheme({
       sup: true,
       tabs: true,
       vPre: true,
-      vuePlayground: true
-    }
+      vuePlayground: true,
+    },
+    // blog: true,
+    blog: {
+      type: [
+        {
+          key: "slide",
+          filter: (page) => page.frontmatter.layout === "Slide",
+        },
+      ],
+    },
+    autoCatalog: {
+      shouldIndex: ({ path }) => path.startsWith('/posts/'),
+    },
+  },
+  // 博客配置
+  blog: {
+    name: "summer",
+    description: "summer的笔记合集",
+    medias: {
+      Email: "mailto:3244742300@qq.com",
+      Github:'https://github.com/summer-like-coding',
+    },
+    intro: 'slides',
+    
   },
 });

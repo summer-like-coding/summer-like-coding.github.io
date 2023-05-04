@@ -1,7 +1,21 @@
 ---
-title: 幻灯片页
+title: summer的自我介绍
 icon: slides
 layout: Slide
+# 这是侧边栏的顺序
+order: 1
+# 设置作者
+author: summer
+# 一个页面可以有多个分类
+category:
+  - 自我介绍
+# 一个页面可以有多个标签
+tag:
+  - 自我介绍
+# 此页面会在文章列表置顶
+sticky: true
+# 此页面会出现在文章收藏中
+star: true
 ---
 
 <!-- markdownlint-disable MD024 MD033 MD051 -->
