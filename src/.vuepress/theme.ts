@@ -90,7 +90,7 @@ export default hopeTheme({
         presets: ["ts", "vue"],
       },
       presentation: {
-        plugins: ["highlight", "math", "search", "notes", "zoom"],
+        plugins: ["highlight", "math", "search", "notes", "zoom"]
       },
       stylize: [
         {
@@ -109,7 +109,7 @@ export default hopeTheme({
       sup: true,
       tabs: true,
       vPre: true,
-      vuePlayground: true,
-    },
+      vuePlayground: true
+    }
   },
 });
