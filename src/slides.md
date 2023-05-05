@@ -28,7 +28,7 @@ star: true
 
 <!-- .element: class="r-fit-text" -->
 
-快来看看她在干啥！😎  
+Go on!😎  
 
 ---
 

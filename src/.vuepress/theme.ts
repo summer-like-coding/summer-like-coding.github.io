@@ -29,7 +29,7 @@ export default hopeTheme({
     editLink: "Edit this page on GitHub",
   },
   // footer配置
-  footer: "Default footer",
+  // footer: "Default footer",
 
   displayFooter: true,
   encrypt: {
