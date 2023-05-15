@@ -15,9 +15,9 @@ export default hopeTheme({
 
   logo: "/logo.svg",
   // GitHub链接
-  repo: "summer-like-coding/summer-like-coding.github.io.git",
+  repo: "summer-like-coding/summer-like-coding.github.io",
 
-  docsDir: "demo/theme-docs/src",
+  docsDir: "src",
   // navbar
   navbar: Navbar,
 
