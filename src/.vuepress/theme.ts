@@ -19,15 +19,30 @@ export default hopeTheme({
 
   docsDir: "src",
   // navbar
-  navbar: Navbar,
 
-  // sidebar
-  sidebar: Sidebar,
-
-  // meta配置
-  metaLocales: {
-    editLink: "Edit this page on GitHub",
+  locales: {
+    "/": {
+      navbar: Navbar,
+      sidebar: Sidebar,
+      footer: "summer 的笔记合集",
+      displayFooter: true,
+      navbarLayout: {
+        start: ["Brand"],
+        center: ["Links"],
+        end: ["Repo", "Outlook", "Search"],
+      },
+      blog: {
+        name: "summer",
+        description: "summer 的笔记合集",
+        intro: "/slides.md",
+      },
+      // page meta
+      metaLocales: {
+        editLink: "在 GitHub 上编辑此页",
+      },
+    },
   },
+
   // footer配置
   // footer: "Default footer",
 
@@ -96,18 +111,7 @@ export default hopeTheme({
       ],
     },
     autoCatalog: {
-      shouldIndex: ({ path }) => path.startsWith('/posts/'),
+      shouldIndex: ({ path }) => path.startsWith("/posts/"),
     },
-  },
-  // 博客配置
-  blog: {
-    name: "summer",
-    description: "summer的笔记合集",
-    medias: {
-      Email: "mailto:3244742300@qq.com",
-      Github:'https://github.com/summer-like-coding',
-    },
-    intro: 'slides',
-    
   },
 });
