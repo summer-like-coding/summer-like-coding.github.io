@@ -4,7 +4,8 @@ layout: BlogHome
 icon: home
 title: Summer
 heroImage: /logo.svg
-bgImage: /bg.jpg
+# python -c "import cv2;cv2.imwrite('bg.webp', cv2.imread('bg.jpg'))"
+bgImage: /bg.webp
 bgImageStyle:
   background-image: var(--bg-image-style)
 heroText: Summer的笔记合集
