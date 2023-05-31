@@ -2,4 +2,4 @@
 User-agent:*
 Disallow:
 
-Sitemap: https://summer.alexsun.top/sitemap.xml
+Sitemap: https://darling-summer.top/sitemap.xml
