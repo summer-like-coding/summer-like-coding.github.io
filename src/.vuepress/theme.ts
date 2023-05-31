@@ -19,15 +19,33 @@ export default hopeTheme({
 
   docsDir: "src",
   // navbar
-  navbar: Navbar,
 
-  // sidebar
-  sidebar: Sidebar,
-
-  // meta配置
-  metaLocales: {
-    editLink: "Edit this page on GitHub",
+  locales: {
+    "/": {
+      navbar: Navbar,
+      sidebar: Sidebar,
+      footer: "summer 的笔记合集",
+      displayFooter: true,
+      navbarLayout: {
+        start: ["Brand"],
+        center: ["Links"],
+        end: ["Repo", "Outlook", "Search"],
+      },
+      blog: {
+        name: "summer",
+        description: "summer 的笔记合集",
+        intro: "/slides.md",
+      },
+      // page meta
+      metaLocales: {
+        editLink: "在 GitHub 上编辑此页",
+      },
+    },
   },
+
+  // footer配置
+  // footer: "Default footer",
+
   displayFooter: true,
   // footer配置
   footer:
