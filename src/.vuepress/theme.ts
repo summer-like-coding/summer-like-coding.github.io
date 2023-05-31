@@ -42,10 +42,6 @@ export default hopeTheme({
       },
     },
   },
-
-  // footer配置
-  // footer: "Default footer",
-
   displayFooter: true,
   // footer配置
   footer:
