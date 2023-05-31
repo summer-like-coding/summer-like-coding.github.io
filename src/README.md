@@ -19,8 +19,7 @@ projects:
   - name: 3w知识平台
     desc: 3w社的知识网络
     icon: network
-    link: https://summer.alexsun.top/3w-platform/
-footer: summer的笔记合集
+    link: https://darling-summer.top/3w-platform/
 ---
 
 <!-- ICON 参考：https://theme-hope.vuejs.press/zh/guide/interface/icon.html -->

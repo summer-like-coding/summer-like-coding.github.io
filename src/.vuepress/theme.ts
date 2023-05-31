@@ -28,10 +28,11 @@ export default hopeTheme({
   metaLocales: {
     editLink: "Edit this page on GitHub",
   },
-  // footer配置
-  // footer: "Default footer",
-
   displayFooter: true,
+  // footer配置
+  footer:
+    '<a href="https://beian.miit.gov.cn/" target="_blank">苏ICP备2023012081号</a>',
+  // 评论
   encrypt: {
     config: {
       "/demo/encrypt.html": ["1234"],
@@ -96,7 +97,7 @@ export default hopeTheme({
       ],
     },
     autoCatalog: {
-      shouldIndex: ({ path }) => path.startsWith('/posts/'),
+      shouldIndex: ({ path }) => path.startsWith("/posts/"),
     },
   },
   // 博客配置
@@ -105,9 +106,8 @@ export default hopeTheme({
     description: "summer的笔记合集",
     medias: {
       Email: "mailto:3244742300@qq.com",
-      Github:'https://github.com/summer-like-coding',
+      Github: "https://github.com/summer-like-coding",
     },
-    intro: 'slides',
-    
+    intro: "slides",
   },
 });
