@@ -20,4 +20,9 @@ projects:
     desc: 3w社的知识网络
     icon: network
     link: https://darling-summer.top/3w-platform/
+
+  - name: 面试整理
+    desc: 面试整理
+    icon: note
+    link: https://darling-summer.top/interview-notes/
 ---
