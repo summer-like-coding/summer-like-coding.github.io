@@ -1,44 +1,44 @@
-import { hopeTheme } from "vuepress-theme-hope";
-import { Navbar } from "./navbar/index.js";
-import { Sidebar } from "./sidebar/index.js";
+import { hopeTheme } from 'vuepress-theme-hope'
+import { Navbar } from './navbar/index.js'
+import { Sidebar } from './sidebar/index.js'
 
 export default hopeTheme({
-  hostname: "https://summer.alexsun.top/",
+  hostname: 'https://summer.alexsun.top/',
 
   author: {
-    name: "summer",
+    name: 'summer',
   },
   // 图标库
-  iconAssets: "iconfont",
+  iconAssets: 'iconfont',
   // 全屏
   // fullscreen:true,
 
-  logo: "/logo.svg",
+  logo: '/logo.svg',
   // GitHub链接
-  repo: "summer-like-coding/summer-like-coding.github.io",
+  repo: 'summer-like-coding/summer-like-coding.github.io',
 
-  docsDir: "src",
+  docsDir: 'src',
   // navbar
 
   locales: {
-    "/": {
+    '/': {
       navbar: Navbar,
       sidebar: Sidebar,
-      footer: "summer 的笔记合集",
+      footer: 'summer 的笔记合集',
       displayFooter: true,
       navbarLayout: {
-        start: ["Brand"],
-        center: ["Links"],
-        end: ["Repo", "Outlook", "Search"],
+        start: ['Brand'],
+        center: ['Links'],
+        end: ['Repo', 'Outlook', 'Search'],
       },
       blog: {
-        name: "summer",
-        description: "summer 的笔记合集",
-        intro: "/slides.md",
+        name: 'summer',
+        description: 'summer 的笔记合集',
+        intro: '/slides.md',
       },
       // page meta
       metaLocales: {
-        editLink: "在 GitHub 上编辑此页",
+        editLink: '在 GitHub 上编辑此页',
       },
     },
   },
@@ -49,14 +49,14 @@ export default hopeTheme({
   displayFooter: true,
   encrypt: {
     config: {
-      "/demo/encrypt.html": ["1234"],
-      "/zh/demo/encrypt.html": ["1234"],
+      '/demo/encrypt.html': ['1234'],
+      '/zh/demo/encrypt.html': ['1234'],
     },
   },
   // 幻灯片
   blogLocales: {
-    slide: "幻灯片",
-    original: "原创",
+    slide: '幻灯片',
+    original: '原创',
   },
   plugins: {
     // all features are enabled for demo, only preserve features you need here
@@ -77,21 +77,20 @@ export default hopeTheme({
       mark: true,
       mermaid: true,
       playground: {
-        presets: ["ts", "vue"],
+        presets: ['ts', 'vue'],
       },
-      presentation: {
-        plugins: ["highlight", "math", "search", "notes", "zoom"],
-      },
+      presentation: ['highlight', 'math', 'search', 'notes', 'zoom'],
       stylize: [
         {
-          matcher: "Recommended",
+          matcher: 'Recommended',
           replacer: ({ tag }) => {
-            if (tag === "em")
+            if (tag === 'em') {
               return {
-                tag: "Badge",
-                attrs: { type: "tip" },
-                content: "Recommended",
-              };
+                tag: 'Badge',
+                attrs: { type: 'tip' },
+                content: 'Recommended',
+              }
+            }
           },
         },
       ],
@@ -105,13 +104,13 @@ export default hopeTheme({
     blog: {
       type: [
         {
-          key: "slide",
-          filter: (page) => page.frontmatter.layout === "Slide",
+          key: 'slide',
+          filter: page => page.frontmatter.layout === 'Slide',
         },
       ],
     },
     autoCatalog: {
-      shouldIndex: ({ path }) => path.startsWith("/posts/"),
+      shouldIndex: ({ path }) => path.startsWith('/posts/'),
     },
   },
-});
+})

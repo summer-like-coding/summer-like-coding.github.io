@@ -31,5 +31,4 @@
 7. 设置 `Branch: gh-pages /(root)`，可选的 HTTPS `Enforce HTTPS`，保存
 8. 这将自动创建 **GitHub Pages**。  
 
-体验地址:
 总之，基于 VuePress 的个人博客平台具有易用、高度可定制、SEO 友好、高效静态生成等特点，非常适合用来创建个人博客网站。
