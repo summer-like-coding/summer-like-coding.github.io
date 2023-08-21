@@ -56,7 +56,7 @@ VuePress 会使用 [markdown-it](https://github.com/markdown-it/markdown-it) 来
 信息容器，包含 `代码` 与 [链接](#自定义容器)。
 
 ```js
-const a = 1;
+const a = 1
 ```
 
 :::
@@ -304,9 +304,9 @@ $$
 ```
 
 ```js
-document.querySelector("#very").addEventListener("click", () => {
-  alert("非常强大");
-});
+document.querySelector('#very').addEventListener('click', () => {
+  alert('非常强大')
+})
 ```
 
 ```css
@@ -332,11 +332,11 @@ span {
 @file index.ts
 
 ```ts
-const msg = "hello world";
+const msg = 'hello world'
 
-const speak = (msg: string) => console.log(msg);
+const speak = (msg: string) => console.log(msg)
 
-speak(msg);
+speak(msg)
 ```
 
 :::
@@ -351,14 +351,14 @@ speak(msg);
 
 ```vue
 <script setup>
-import { ref } from "vue";
+import { ref } from 'vue'
 
-const msg = ref("Hello World!");
+const msg = ref('Hello World!')
 </script>
 
 <template>
   <h1>{{ msg }}</h1>
-  <input v-model="msg" />
+  <input v-model="msg">
 </template>
 ```
 
@@ -386,7 +386,7 @@ const msg = ref("Hello World!");
 ## 幻灯片 3.1
 
 ```js
-const a = 1;
+const a = 1
 ```
 
 --
