@@ -4,7 +4,6 @@ layout: BlogHome
 icon: home
 title: Summer
 heroImage: /logo.svg
-# python -c "import cv2;cv2.imwrite('bg.webp', cv2.imread('bg.jpg'))"
 bgImage: /bg.webp
 bgImageStyle:
   background-image: var(--bg-image-style)
@@ -20,8 +19,10 @@ projects:
   - name: 3w知识平台
     desc: 3w社的知识网络
     icon: network
-    link: https://summer.alexsun.top/3w-platform/
-footer: summer的笔记合集
----
+    link: https://darling-summer.top/3w-platform/
 
-<!-- ICON 参考：https://theme-hope.vuejs.press/zh/guide/interface/icon.html -->
+  - name: 面试整理
+    desc: 面试整理
+    icon: note
+    link: https://darling-summer.top/interview-notes/
+---
