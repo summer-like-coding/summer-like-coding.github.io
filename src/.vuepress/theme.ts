@@ -1,48 +1,48 @@
-import { hopeTheme } from "vuepress-theme-hope";
-import { Navbar } from "./navbar/index.js";
-import { Sidebar } from "./sidebar/index.js";
+import { hopeTheme } from 'vuepress-theme-hope'
+import { Navbar } from './navbar/index.js'
+import { Sidebar } from './sidebar/index.js'
 
 export default hopeTheme({
-  hostname: "https://darling-summer.top/",
+  hostname: 'https://darling-summer.top/',
 
   author: {
-    name: "summer",
+    name: 'summer',
   },
   // 图标库
-  iconAssets: "iconfont",
+  iconAssets: 'iconfont',
   // 全屏
   // fullscreen:true,
 
-  logo: "/logo.svg",
+  logo: '/logo.svg',
   // GitHub链接
-  repo: "summer-like-coding/summer-like-coding.github.io",
+  repo: 'summer-like-coding/summer-like-coding.github.io',
 
-  docsDir: "src",
+  docsDir: 'src',
   navbar: Navbar,
   sidebar: Sidebar,
   footer:
     '<a href="https://beian.miit.gov.cn/" target="_blank">苏ICP备2023012081号</a>',
   displayFooter: true,
   navbarLayout: {
-    start: ["Brand"],
-    center: ["Links"],
-    end: ["Repo", "Outlook", "Search"],
+    start: ['Brand'],
+    center: ['Links'],
+    end: ['Repo', 'Outlook', 'Search'],
   },
   // page meta
   metaLocales: {
-    editLink: "在 GitHub 上编辑此页",
+    editLink: '在 GitHub 上编辑此页',
   },
   // 评论
   encrypt: {
     config: {
-      "/demo/encrypt.html": ["1234"],
-      "/zh/demo/encrypt.html": ["1234"],
+      '/demo/encrypt.html': ['1234'],
+      '/zh/demo/encrypt.html': ['1234'],
     },
   },
   // 幻灯片
   blogLocales: {
-    slide: "幻灯片",
-    original: "原创",
+    slide: '幻灯片',
+    original: '原创',
   },
   plugins: {
     // all features are enabled for demo, only preserve features you need here
@@ -63,21 +63,20 @@ export default hopeTheme({
       mark: true,
       mermaid: true,
       playground: {
-        presets: ["ts", "vue"],
+        presets: ['ts', 'vue'],
       },
-      presentation: {
-        plugins: ["highlight", "math", "search", "notes", "zoom"],
-      },
+      presentation: ['highlight', 'math', 'search', 'notes', 'zoom'],
       stylize: [
         {
-          matcher: "Recommended",
+          matcher: 'Recommended',
           replacer: ({ tag }) => {
-            if (tag === "em")
+            if (tag === 'em') {
               return {
-                tag: "Badge",
-                attrs: { type: "tip" },
-                content: "Recommended",
-              };
+                tag: 'Badge',
+                attrs: { type: 'tip' },
+                content: 'Recommended',
+              }
+            }
           },
         },
       ],
@@ -91,23 +90,23 @@ export default hopeTheme({
     blog: {
       type: [
         {
-          key: "slide",
-          filter: (page) => page.frontmatter.layout === "Slide",
+          key: 'slide',
+          filter: page => page.frontmatter.layout === 'Slide',
         },
       ],
     },
     autoCatalog: {
-      shouldIndex: ({ path }) => path.startsWith("/posts/"),
+      shouldIndex: ({ path }) => path.startsWith('/posts/'),
     },
   },
   // 博客配置
   blog: {
-    name: "summer",
-    description: "summer的笔记合集",
+    name: 'summer',
+    description: 'summer的笔记合集',
     medias: {
-      Email: "mailto:3244742300@qq.com",
-      Github: "https://github.com/summer-like-coding",
+      Email: 'mailto:3244742300@qq.com',
+      Github: 'https://github.com/summer-like-coding',
     },
-    intro: "slides",
+    intro: 'slides',
   },
-});
+})
